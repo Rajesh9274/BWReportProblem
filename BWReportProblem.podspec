@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.source_files = "BWReportProblem/**/*.{swift}"
   spec.resources = "BWReportProblem/Resources/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   spec.framework  = "UIKit"
-  spec.dependency 'Alamofire', '~> 5.2'
+  spec.dependency 'Alamofire'
   spec.dependency 'iOSPhotoEditor'
   spec.dependency 'IBAnimatable'
   spec.dependency 'SVProgressHUD'
