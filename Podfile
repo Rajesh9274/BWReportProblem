@@ -4,12 +4,14 @@
 target 'BWReportProblem' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'CLImageEditor'
+ 
   pod 'IBAnimatable'
   pod 'Alamofire', '~> 5.2'
   pod 'SVProgressHUD'
   pod 'ReachabilitySwift'
   pod 'IQKeyboardManagerSwift'
+  pod 'iOSPhotoEditor'
+  pod 'Toast-Swift'
 
   # Pods for BWReportProblem
 

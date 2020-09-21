@@ -8,7 +8,10 @@
 
 import Foundation
 import UIKit
+import Toast_Swift
+import SVProgressHUD
 
+ 
 extension Bundle {
     var releaseVersionNumber: String {
         return infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
@@ -24,6 +27,22 @@ extension Bundle {
     
     var name: String {
         return object(forInfoDictionaryKey: "CFBundleName") as? String ?? ""
+    }
+}
+
+extension UIViewController{
+    // Display Tost with gray backgroundColor
+    func displayTost(strMessage: String)
+    {
+        var style = ToastStyle()
+        style.backgroundColor = .darkGray
+        ToastManager.shared.style = style
+        self.view.makeToast(strMessage, duration: 3.0, position: .center)
+        
+    }
+    
+    func mainQueue() -> DispatchQueue {
+        return DispatchQueue.main
     }
 }
 

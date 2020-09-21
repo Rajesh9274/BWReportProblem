@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A04715BA2518C0E7007EA6EF /* BWFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04715B72518C0E7007EA6EF /* BWFeedback.swift */; };
+		A04715BB2518C0E7007EA6EF /* BWWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04715B82518C0E7007EA6EF /* BWWebAPI.swift */; };
+		A04715BC2518C0E7007EA6EF /* BWFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04715B92518C0E7007EA6EF /* BWFeedbackViewController.swift */; };
 		A0FD041E251387410028628D /* BWReportProblem.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FD041C251387410028628D /* BWReportProblem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0FD0437251388F30028628D /* BWFeedbackExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD042E251388F30028628D /* BWFeedbackExtensions.swift */; };
 		A0FD0438251388F30028628D /* BWFeedbackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD042F251388F30028628D /* BWFeedbackModel.swift */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		6202F8FFD76D3EC730C2ED2A /* Pods_BWReportProblem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BWReportProblem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04715B72518C0E7007EA6EF /* BWFeedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWFeedback.swift; sourceTree = "<group>"; };
+		A04715B82518C0E7007EA6EF /* BWWebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWebAPI.swift; sourceTree = "<group>"; };
+		A04715B92518C0E7007EA6EF /* BWFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWFeedbackViewController.swift; sourceTree = "<group>"; };
 		A0FD0419251387410028628D /* BWReportProblem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BWReportProblem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FD041C251387410028628D /* BWReportProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWReportProblem.h; sourceTree = "<group>"; };
 		A0FD041D251387410028628D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 			children = (
 				A0FD042E251388F30028628D /* BWFeedbackExtensions.swift */,
 				A0FD042F251388F30028628D /* BWFeedbackModel.swift */,
+				A04715B72518C0E7007EA6EF /* BWFeedback.swift */,
+				A04715B92518C0E7007EA6EF /* BWFeedbackViewController.swift */,
+				A04715B82518C0E7007EA6EF /* BWWebAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,8 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0FD043B251388F30028628D /* ViewController.swift in Sources */,
+				A04715BA2518C0E7007EA6EF /* BWFeedback.swift in Sources */,
 				A0FD0437251388F30028628D /* BWFeedbackExtensions.swift in Sources */,
 				A0FD0438251388F30028628D /* BWFeedbackModel.swift in Sources */,
+				A04715BC2518C0E7007EA6EF /* BWFeedbackViewController.swift in Sources */,
+				A04715BB2518C0E7007EA6EF /* BWWebAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +388,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BWReportProblem/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +415,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BWReportProblem/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
